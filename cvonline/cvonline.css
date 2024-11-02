@@ -1,0 +1,119 @@
+
+
+.avatar-img{
+    width: 400px;
+    height: 400px;
+    border-radius: 0px;
+    margin: 50px 100px 40px 50px;
+    
+}
+.noidung{
+    margin-left: 100px;
+    color: rgb(49, 42, 42);
+}
+body {
+    display: flex; /* Sử dụng flexbox để chia trang thành 2 phần */
+    flex-direction: row; /* Đặt chiều hướng là hàng */
+    margin: 0; /* Bỏ margin mặc định */
+    height: 100vh; /* Chiều cao toàn bộ trang */
+}
+.left {
+    width: 40%;
+    height: 3200px;
+    position: absolute;
+    background-color: rgb(49, 42, 42) ;
+    margin-top:-50px;
+    margin-left: 0;
+    margin-right: 60%;
+}
+.right {
+    width: 60%;
+    height: 2000px;
+    margin-left:525px;
+    background-color: white ;
+    
+}
+.crop {
+    width: 500px; /* chiều rộng bạn muốn hiển thị */
+    height: 500px; /* chiều cao bạn muốn hiển thị */
+    overflow: hidden; /* Ẩn phần ảnh vượt ra ngoài */
+    position: relative;
+    margin-top:50px;
+    margin-left: 10px;
+    object-fit: cover;
+}
+
+.crop img {
+    position: absolute;
+    top: 0px; /* Di chuyển lên để lấy góc */
+    left: 0px; /* Di chuyển sang trái để lấy góc */
+    image-rendering:crisp-edges;
+    transform: scale(0.8);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+    height: 30px; /* Chiều cao của cột */
+    position: relative;
+}
+
+.dat {
+    background-color: #2498ce; /* Màu phần đạt được */
+    height: 100%; /* Để chiều cao khớp với cột */
+    border-radius: 5px 0 0 5px; /* Bo góc bên trái */
+}
+
+.chuadat {
+    background-color: #807c7c; /* Màu phần chưa đạt */
+    height: 100%; /* Để chiều cao khớp với cột */
+    border-radius: 0 5px 5px 0 ; /* Bo góc bên phải */
+}
+
+.label {
+    position: absolute;
+    left: 10px; /* Khoảng cách từ bên trái */
+    color: #0c0c0c; /* Màu chữ */
+    z-index: 1; /* Để nhãn nằm trên cùng */
+}
+.hidden {
+    display: none; /* Ẩn nội dung không cần thiết */
+}
+.flag-button1 {
+    background-image: url('vn.webp'); /* Đường dẫn đến hình quốc kỳ */
+    background-size: cover; /* Đảm bảo hình nền phủ toàn bộ nút */
+    border: none; /* Không có đường viền */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    
+    cursor: pointer; /* Con trỏ khi rê chuột qua nút */
+    border-radius: 5px; /* Bo góc nút */
+}
+.flag-button2 {
+    background-image: url('my.jpg'); /* Đường dẫn đến hình quốc kỳ */
+    background-size: cover; /* Đảm bảo hình nền phủ toàn bộ nút */
+    
+    border: none; /* Không có đường viền */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    
+    cursor: pointer; /* Con trỏ khi rê chuột qua nút */
+    border-radius: 5px; /* Bo góc nút */
+}
+
+.flag-button:hover {
+    opacity: 0.8; /* Hiệu ứng khi rê chuột qua nút */
+}
