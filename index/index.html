@@ -1,1 +1,32 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         @keyframes rainbow {
+            0% { background-position: 0%; }
+            100% { background-position: 100%; }
+        }
+        .rainbow {
+            font-size: 48px;
+            font-weight: bold;
+            background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet,indigo,blue,green,yellow,orange);
+            background-size: 400%; /* Kích thước nền lớn hơn để tạo hiệu ứng mượt mà */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbow 10s linear infinite;
+        }
+        
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <ul><h1 class="rainbow">Sau đây là các bài tập cá nhân </h1>
+        <li><h2>Link dẫn đến bài tập "CV cá nhân online":</h2><a href="cvonline.html"> <h3>CV cá nhân online</h3></a></li>
+        <li><h2>Link dẫn đến bài tập "Cá bơi"</h2><a href="cá bơi.html"> <h3>Cá bơi</h3></a></li>
+    </ul>
+</body>
+</html>
+
