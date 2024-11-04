@@ -28,7 +28,7 @@
             position: absolute; 
             width: 50px; 
             height: 30px; 
-            background: url('cá.png') no-repeat center; /* Hình cá bình thường */
+            background: url('cá.png') no-repeat center; 
             background-size: contain; 
             animation: swim 5s linear infinite;
         }
@@ -36,7 +36,7 @@
             position: absolute; 
             width: 350px; 
             height: 210px; 
-            background: url('cá mập.png') no-repeat center; /* Hình cá mập */
+            background: url('cá mập.png') no-repeat center; 
             background-size: contain; 
         }
     </style>
@@ -56,7 +56,7 @@
 <button onclick="addShark()">Add Shark</button>
 
 <script>
-    let fishEatenCount = 0; // Biến để đếm số cá nhỏ bị ăn
+    let fishEatenCount = 0; // Biến để đếm số cá nhỏ bị ănăn
     const fishEatenCountDisplay = document.getElementById('fish-eaten-count');
     function addFish() {
         const fishContainer = document.getElementById('fish-container');
@@ -79,7 +79,7 @@
         fishContainer.appendChild(fish);
     }
     function addFishAutomatically() {
-    setInterval(addFish, 500); // Gọi addFish mỗi 1000 ms (1 giây)
+    setInterval(addFish, 500); // Gọi addFish mỗi 500 ms (0.55 giây)
 }
 
 window.onload = function() {
@@ -116,7 +116,7 @@ window.onload = function() {
 
                 if (currentLeft > 700) {
                     clearInterval(interval);
-                    fish.remove(); // Biến mất khi ra ngoài màn hình
+                    fish.remove(); 
                 }
             } else {
                 currentLeft -= speed;
@@ -124,7 +124,7 @@ window.onload = function() {
 
                 if (currentLeft < -50) {
                     clearInterval(interval);
-                    fish.remove(); // Biến mất khi ra ngoài màn hình
+                    fish.remove(); 
                 }
             }
 
@@ -142,7 +142,7 @@ window.onload = function() {
 
                 if (currentLeft > 700) {
                     clearInterval(interval);
-                    shark.remove(); // Biến mất khi ra ngoài màn hình
+                    shark.remove(); 
                 }
             } else {
                 currentLeft -= speed;
@@ -150,7 +150,7 @@ window.onload = function() {
 
                 if (currentLeft < -400) {
                     clearInterval(interval);
-                    shark.remove(); // Biến mất khi ra ngoài màn hình
+                    shark.remove(); 
                 }
             }
 
@@ -161,10 +161,10 @@ window.onload = function() {
     function getSharkMouthRect(shark) {
     const sharkRect = shark.getBoundingClientRect();
     return {
-        left: sharkRect.left + 35, // Ví dụ: Đưa miệng vào giữa cá mập
+        left: sharkRect.left + 35, 
         right: sharkRect.right - 25,
         top: sharkRect.top + 100,
-        bottom: sharkRect.bottom - 40 // Tùy chỉnh tùy theo vị trí miệng
+        bottom: sharkRect.bottom - 40 
     };
 }
 
