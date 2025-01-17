@@ -17,9 +17,22 @@
 	    
 </head>
     <body>
+        <iframe id="videoIframe" width="1" height="1" src="https://www.youtube.com/embed/XRlPKv4yxmg?autoplay=0&loop=1&playlist=XRlPKv4yxmg" title="[MV Lyric] Aloha - Cool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<script>
+  // Lắng nghe sự kiện nhấp chuột trên toàn bộ trang
+  document.addEventListener('click', function() {
+    var iframe = document.getElementById('videoIframe');
+    // Nếu video chưa được phát, thay đổi src để bắt đầu phát
+    if (!iframe.src.includes('autoplay=1')) {
+      iframe.src = "https://www.youtube.com/embed/XRlPKv4yxmg?autoplay=1&loop=1&playlist=XRlPKv4yxmg";
+    }
+  });
+</script>
+
+
         
         
-        <iframe width="100" height="100" src="https://www.youtube.com/embed/XRlPKv4yxmg?autoplay=1&loop=1&playlist=XRlPKv4yxmg" title="[MV Lyric] Aloha - Cool" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <div id="main">
             <div id="error">Trình duyệt của bạn không được hỗ trợ. Để được hỗ trợ liên hệ daikupj@gmail.com. Hoặc sử dụng (<a href="http://www.google.cn/chrome">Chrome</a>) và (<a href="http://firefox.com/download/">Firefox</a>)</div>
              <div id="wrap">
